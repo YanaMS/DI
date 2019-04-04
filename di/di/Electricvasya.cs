@@ -4,11 +4,11 @@ using System.Text;
 
 namespace DI
 {
-    class Singer
+    class ElectricVasya: BaseElectric
     {
-        public Singer()
+        public override void CutWires()
         {
-
+            DoWork("Vasya");
         }
     }
 }

@@ -8,6 +8,7 @@ namespace DI
     class DIContainer
     {
         private readonly List<object> _objects = new List<object>();
+
         public T Register<T>()where T:new()
         {
             T instance = new T();

@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\di_container\\di\\di\\di.csproj",
-      "projectName": "di",
-      "projectPath": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\di_container\\di\\di\\di.csproj",
+      "projectUniqueName": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\DI\\di\\di\\DI.csproj",
+      "projectName": "DI",
+      "projectPath": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\DI\\di\\di\\DI.csproj",
       "packagesPath": "C:\\Users\\yana.sukharieva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\di_container\\di\\di\\obj\\",
+      "outputPath": "C:\\Users\\yana.sukharieva\\Documents\\Stady_Projects\\study_projects\\DI\\di\\di\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
