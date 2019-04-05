@@ -4,11 +4,24 @@ using System.Text;
 
 namespace DI
 {
-    class ElectricVasya: BaseElectric
+    class ElectricVasya: IElectric
     {
-        public override void CutWires()
+        public ElectricVasya(ElectricTools electric, bool isReady)
         {
-            DoWork("Vasya");
+            IsReady = isReady;
+            _electric = electric;
+            Smoke();
+        }
+        private int _workCount = 0;
+        public bool IsReady { get;}
+        private readonly ElectricTools _electric;
+        public void CutWires()
+        {
+            _electric.DoWork("Vasya");
+        }
+        public void Smoke()
+        {
+            _workCount = _workCount++;
         }
     }
 }

@@ -4,16 +4,24 @@ using System.Text;
 
 namespace DI
 {
-    class ElectricPetr: BaseElectric
+    class ElectricPetr: IElectric, ICleaner
     {
-        public override void CutWires()
+        public ElectricPetr(ElectricTools electric, Cleaner cleaner)
         {
-            DoWork("Petr");
+            _electric = electric;
+            _cleaner = cleaner;
+        }
+        private readonly Cleaner _cleaner;
+        private readonly ElectricTools _electric;
+        public void CutWires()
+        {
+            _electric.DoWork("Petr");
         }
 
-        public override void CleanFloor()
+        public void CleanFloor()
         {
-            CleanFloor("Petr");
+            _cleaner.CleanFloor("Petr");
         }
+
     }
 }
